@@ -1,4 +1,4 @@
-define(['lib/text', 'lib/handlebars'], function (text, Handlebars) {
+define(['text', 'handlebars'], function (text, Handlebars) {
 
     var buildMap = {};
 

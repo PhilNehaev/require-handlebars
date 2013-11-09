@@ -1,13 +1,14 @@
 define(['text', 'handlebars'], function (text, Handlebars) {
 
-    var buildMap = {};
+    var buildMap = {},
+        ext = '.hbs';
 
     return {
 
         load: function(name, parentRequire, onload, config) {
 
             text.get(
-                parentRequire.toUrl(name + '.hbs'),
+                parentRequire.toUrl(name.replace(ext, '') + ext),
                 function (data) {
 
                     if (config.isBuild) {

@@ -4,6 +4,6 @@
     "dependencies": {
         "requirejs": "2.1",
         "requirejs-text": "2.0",
-        "handlebars": "1.0"
+        "handlebars": "1.1"
     }
 }

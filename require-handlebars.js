@@ -29,7 +29,7 @@ define(['text', 'handlebars'], function (text, Handlebars) {
                 var templateSpec = buildMap[moduleName];
 
                 write('define("' + pluginName + '!' + moduleName + '",' +
-                    'function(){ return Handlebars.VM.template(' + templateSpec + ');});\n');
+                    'function(){ return Handlebars.VM.template(' + templateSpec + ', Handlebars);});\n');
             }
         }
     };
